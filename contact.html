@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>GLOWRAISER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      .about {
+        width: 35%;
+        left: 30px;
+        top: 150px;
+        position: relative;
+        font-size: 20px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="bgwaves">
+      <source src="/assets/bgwaves.mp4" type="video/mp4" />
+    </video>
+    <div class="header">
+      <div class="logo">
+        <img src="/assets/logo.webp" />
+      </div>
+      <div class="topnav" id="myTopnav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="design.html">Design</a>
+          <a href="painting.html">Painting</a>
+          <a href="illustration.html">Illustration</a>
+          <a href="photo.html">Photo</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="about">
+      Lily Chan is a Chinese-Malaysian graphic designer and artist. She
+      graduated from the University of Melbourne with a degree in Design, major
+      in Graphic Design and specialisation in Typography. She is currently based
+      in Naarm (Melbourne), but originally from Malaysia. Lover of all things
+      maximalist, colourful, bizarre.
+      <br /><br />
+      She has gained professional graphic design experience working at
+      <a href="https://www.mossery.co/">Mossery</a>,
+      <a href="https://nuttshell.com.au">Nuttshell</a>, and currently
+      <a href="https://smashproducts.com/">Smash Products</a>. <br /><br />
+      <a
+        href="https://www.dropbox.com/scl/fi/fq3x3e1sxdna7111lm3m7/CV_2024.pdf?rlkey=qbfmj102mf829xt1ggg7xwul5&st=j87mruub&dl=0"
+        >View CV</a
+      >
+      <br />
+      <a
+        href="https://www.dropbox.com/scl/fi/1k0inbol0g8najls75fef/Portfolio_2024.pdf?rlkey=epgtwwytbw0hjdjezrkuu8do4&st=ralfo80g&dl=0"
+        >View Portfolio</a
+      >
+      <br /><br />
+      Exhibitions
+      <br />
+      ☆ Unassigned Gallery, 2023, Metamorphosis: Life of a Teenage They/Them
+      <br />
+      ☆ Brunswick Street Gallery, 2023, Andromeda
+
+      <br /><br />
+      For any enquiries, email
+      <a href="mailto:glowraiser@proton.me">glowraiser@proton.me</a> xx
+    </div>
+
+    <script>
+      f; /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

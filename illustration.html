@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>GLOWRAISER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+      .about {
+        width: 35%;
+        left: 30px;
+        top: 120px;
+        position: relative;
+        font-style: normal;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <video autoplay muted loop id="bgwaves">
+      <source src="/assets/bgwaves.mp4" type="video/mp4" />
+    </video>
+    <div class="header">
+      <div class="logo">
+        <img src="/assets/logo.webp" />
+      </div>
+      <div class="topnav" id="myTopnav">
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="design.html">Design</a>
+          <a href="painting.html">Painting</a>
+          <a href="illustration.html" class="active">Illustration</a>
+          <a href="photo.html">Photo</a>
+          <a href="contact.html">Contact</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="column">
+        <img src="/assets/illustration/himeno.webp" alt="" />
+        <img src="/assets/illustration/satosugu.webp" alt="" />
+        <img src="/assets/illustration/shoko.webp" alt="" />
+        <img src="/assets/illustration/angel.webp" alt="" />
+      </div>
+
+      <div class="column">
+        <img src="/assets/illustration/kiki.webp" alt="" />
+        <img src="/assets/illustration/yae.webp" alt="" />
+        <img src="/assets/illustration/suna.webp" alt="" />
+        <img src="/assets/illustration/me.webp" alt="" />
+      </div>
+      <div class="column">
+        <img src="/assets/illustration/ning.webp" alt="" />
+        <img src="/assets/illustration/aquarium.webp" alt="" />
+        <img src="/assets/illustration/maki.webp" alt="" />
+        <img src="/assets/illustration/sirena.webp" alt="" />
+      </div>
+    </div>
+    <script>
+      f; /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
