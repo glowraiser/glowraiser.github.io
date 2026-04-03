@@ -14,13 +14,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <style>
-      .about {
-        width: 35%;
-        left: 30px;
-        top: 120px;
-        position: relative;
-        font-style: normal;
-        font-size: 20px;
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          padding: 0;
+        }
+
+        .gallery {
+          position: relative;
+          width: 85%;
+          margin: auto;
+        }
       }
     </style>
   </head>
@@ -40,9 +44,6 @@
           <a href="illustration.html" class="active">Illustration</a>
           <a href="photo.html">Photo</a>
           <a href="contact.html">Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
         </nav>
       </div>
     </div>
@@ -61,6 +62,7 @@
         <img src="/assets/illustration/suna.webp" alt="" />
         <img src="/assets/illustration/me.webp" alt="" />
       </div>
+
       <div class="column">
         <img src="/assets/illustration/ning.webp" alt="" />
         <img src="/assets/illustration/aquarium.webp" alt="" />
@@ -68,16 +70,5 @@
         <img src="/assets/illustration/sirena.webp" alt="" />
       </div>
     </div>
-    <script>
-      f; /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
   </body>
 </html>

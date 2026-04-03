@@ -19,8 +19,18 @@
         left: 30px;
         top: 150px;
         position: relative;
+        font-style: normal;
         font-size: 20px;
         display: inline-block;
+      }
+      @media screen and (max-width: 600px) {
+        .about {
+          width: 85%;
+          margin: auto;
+          display: block;
+          top: 50px;
+          left: 0px;
+        }
       }
     </style>
   </head>
@@ -40,9 +50,6 @@
           <a href="illustration.html">Illustration</a>
           <a href="photo.html">Photo</a>
           <a href="contact.html" class="active">Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
         </nav>
       </div>
     </div>
@@ -78,17 +85,5 @@
       For any enquiries, email
       <a href="mailto:glowraiser@proton.me">glowraiser@proton.me</a> xx
     </div>
-
-    <script>
-      f; /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
   </body>
 </html>

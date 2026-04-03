@@ -21,7 +21,19 @@
         bottom: 30px;
         position: absolute;
         font-style: normal;
-        font-size: 3em;
+        font-size: 48px;
+      }
+
+      @media screen and (max-width: 600px) {
+        .main {
+          font-size: 34px;
+          width: 85%;
+          margin: auto;
+          position: relative;
+          top: 50px;
+          left: 0px;
+          text-align: center;
+        }
       }
     </style>
   </head>
@@ -41,9 +53,6 @@
           <a href="illustration.html">Illustration</a>
           <a href="photo.html">Photo</a>
           <a href="contact.html">Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
         </nav>
       </div>
     </div>
@@ -54,17 +63,5 @@
       cultural and educational projects. Currently based in
       <i>Naarm (Melbourne)</i>.
     </div>
-
-    <script>
-      f; /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
-        }
-      }
-    </script>
   </body>
 </html>
