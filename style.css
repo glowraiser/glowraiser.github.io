@@ -93,6 +93,13 @@ a:hover {
   top: 50px;
 }
 
+.low-gallery {
+  position: relative;
+  margin: auto;
+  width: 98%;
+  top: 150px;
+}
+
 .column {
   width: 30.33%;
   float: left;
@@ -117,6 +124,34 @@ a:hover {
   margin-bottom: 7%;
 }
 
+.wide-column {
+  width: 55%;
+  float: left;
+  padding: 1.5%;
+  display: block;
+}
+
+.wide-column img {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.sticky-column {
+  width: 30.33%;
+  float: left;
+  padding-right: 7%;
+  display: block;
+  left: 30px;
+  position: relative;
+  font-family: "Atkinson Hyperlegible Next", sans-serif;
+  font-size: 16px;
+}
+
+.sticky-column img {
+  width: 100%;
+  margin-bottom: 7%;
+}
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -126,6 +161,17 @@ a:hover {
   .half-column {
     width: 100%;
     padding: 0;
+  }
+
+  .wide-column {
+    width: 100%;
+  }
+
+  .wide-column img {
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-bottom: 2%;
   }
 
   .gallery {
