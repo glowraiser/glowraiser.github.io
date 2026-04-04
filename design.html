@@ -10,14 +10,41 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <style></style>
+    <style>
+      .project {
+        margin-top: 0px;
+        margin-bottom: 7%;
+      }
+
+      #title {
+        font-style: italic;
+        font-size: 38px;
+        margin-bottom: 1px;
+      }
+
+      #desc {
+        font-family: "Atkinson Hyperlegible Next", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 2%;
+      }
+
+      #full {
+        font-size: 22px;
+        font-style: italic;
+      }
+
+      #content {
+        font-family: "Atkinson Hyperlegible Next", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        float: right;
+      }
+    </style>
   </head>
   <body>
     <div class="background">
-      <video autoplay muted loop id="bgwaves">
+      <video autoplay muted loop playsinline webkit-playsinline id="bgwaves">
         <source src="/assets/bgwaves.mp4" type="video/mp4" />
       </video>
     </div>
@@ -34,6 +61,79 @@
           <a href="photo.html">Photo</a>
           <a href="contact.html">Contact</a>
         </nav>
+      </div>
+    </div>
+    <div class="gallery">
+      <div class="half-column">
+        <img src="/assets/design/tender.png" />
+        <div class="project">
+          <span id="title">Tender</span><br />
+          <span id="desc"
+            >Self initiated project. A curated collection of queer artworks
+            through history with a focus on positive themes of desire, curiosity
+            & pleasure.
+          </span>
+          <br /><br />
+          <span id="content">Book Design, Typography</span>
+          <a id="full" href="/design/tender.html">Full project →</a>
+        </div>
+        <img src="/assets/design/goodtimes.webp" />
+        <div class="project">
+          <span id="title">Good Times</span><br />
+          <span id="desc"
+            >Branding for a charming little pasta bar. Inspired by their warm &
+            eclectic interior decor & table drawing paper.
+          </span>
+          <br /><br />
+          <span id="content">Branding</span>
+          <a id="full" href="/design/goodtimes.html">Full project →</a>
+        </div>
+        <img src="assets/design/glam.jpg" />
+        <div class="project">
+          <span id="title">Glam</span><br />
+          <span id="desc"
+            >A drunken, euphoric rave of type and colour. Experimental type and
+            image based zine.
+          </span>
+          <br /><br />
+          <span id="content">Typography, Collage</span>
+          <a id="full" href="/design/glam.html">Full project →</a>
+        </div>
+      </div>
+      <div class="half-column">
+        <img src="assets/design/sunmilk.png" />
+        <div class="project">
+          <span id="title">Sunmilk</span><br />
+          <span id="desc"
+            >Branding & packaging of a fictional milk product—Sunmilk. I headed
+            the packaging design for this collaborative project.
+          </span>
+          <br /><br />
+          <span id="content">Branding, Packaging design</span>
+          <a id="full" href="/design/sunmilk.html">Full project →</a>
+        </div>
+        <img src="assets/design/sabon.jpg" />
+        <div class="project">
+          <span id="title">Sabon</span><br />
+          <span id="desc"
+            >Type specimen booklet for the typeface 'Sabon' by Jan Tschichold.
+            Inspired by the crime genre of Penguin Books.
+          </span>
+          <br /><br />
+          <span id="content">Typography</span>
+          <a id="full" href="/design/sabon.html">Full project →</a>
+        </div>
+        <img src="assets/design/nuttshell.webp" />
+        <div class="project">
+          <span id="title">Nuttshell</span><br />
+          <span id="desc"
+            >Work done as a Graphic Design assistant at Nuttshell Studios. In
+            collaboration with the studio team.
+          </span>
+          <br /><br />
+          <span id="content">Illustration. Publication Design</span>
+          <a id="full" href="/design/nuttshell.html">Full project →</a>
+        </div>
       </div>
     </div>
   </body>

@@ -78,19 +78,19 @@ body {
   }
 }
 
-.column {
-  position: relative;
-  top: 0px;
-  width: 100%;
-  display: block;
-}
-
 a {
   color: whitesmoke;
 }
 
 a:hover {
   color: rgb(169, 231, 119);
+}
+
+.gallery {
+  position: relative;
+  margin: auto;
+  width: 98%;
+  top: 50px;
 }
 
 .column {
@@ -105,9 +105,32 @@ a:hover {
   margin-bottom: 7%;
 }
 
-.gallery {
-  position: relative;
-  margin: auto;
-  width: 98%;
-  top: 50px;
+.half-column {
+  width: 47%;
+  float: left;
+  padding: 1.5%;
+  display: block;
+}
+
+.half-column img {
+  width: 100%;
+  margin-bottom: 7%;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    padding: 0;
+  }
+
+  .half-column {
+    width: 100%;
+    padding: 0;
+  }
+
+  .gallery {
+    position: relative;
+    width: 85%;
+    margin: auto;
+  }
 }
