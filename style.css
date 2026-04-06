@@ -126,8 +126,8 @@ a:hover {
 
 .wide-column {
   width: 55%;
-  float: left;
-  padding: 1.5%;
+  float: right;
+  margin-right: 35px;
   display: block;
 }
 
@@ -136,20 +136,16 @@ a:hover {
   margin-bottom: 0;
 }
 
-.sticky-column {
+.text-column {
   width: 30.33%;
   float: left;
   padding-right: 7%;
   display: block;
   left: 30px;
-  position: relative;
+  top: 200px;
+  position: fixed;
   font-family: "Atkinson Hyperlegible Next", sans-serif;
   font-size: 16px;
-}
-
-.sticky-column img {
-  width: 100%;
-  margin-bottom: 7%;
 }
 
 @media screen and (max-width: 600px) {
@@ -163,15 +159,31 @@ a:hover {
     padding: 0;
   }
 
+  .text-column {
+    width: 85%;
+    margin: auto;
+    display: block;
+    top: -100px;
+    padding: 0;
+    float: none;
+    left: 0;
+    position: relative;
+  }
+
   .wide-column {
-    width: 100%;
+    width: 85%;
+    margin: auto;
+    float: none;
+    position: relative;
+    top: -60px;
   }
 
   .wide-column img {
+    width: 100%;
     padding: 0;
     margin: 0;
     display: block;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
   }
 
   .gallery {
