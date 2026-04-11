@@ -192,3 +192,12 @@ a:hover {
     margin: auto;
   }
 }
+.full {
+  text-align: center;
+  margin: auto;
+}
+
+.full img {
+  width: 80%;
+  padding-bottom: 20px;
+}
