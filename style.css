@@ -5,11 +5,11 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  cursor: url("/assets/starcursor.png"), auto;
+  cursor: url("/assets/starcursor.png"), auto !important;
 }
 
 a {
-  cursor: url("/assets/starcursor.png"), auto !important;
+  cursor: url("/assets/starcursor1.png"), auto !important;
 }
 
 @font-face {
@@ -38,7 +38,7 @@ a {
   width: 280px;
   top: 20px;
   left: 10px;
-  position: fixed;
+  position: absolute;
   display: block;
   z-index: 5;
 }
@@ -63,14 +63,15 @@ a {
 }
 
 .topnav a:hover {
-  color: rgb(169, 231, 119);
+  color: #a9e777;
 }
 
 .topnav a.active {
   text-decoration: underline 2px;
 }
 
-@media screen and (max-width: 600px) {
+/* XS portrait tablets/large phones */
+@media only screen and (max-width: 600px) {
   .topnav {
     display: block;
     width: 100%;
@@ -88,13 +89,91 @@ a {
     left: 0;
   }
 }
+/* S portrait tablets/large phones */
+@media only screen and (min-width: 600px) {
+  .topnav {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 20px;
+  }
+
+  .logo img {
+    max-width: 70%;
+    margin: auto;
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+}
+/* M tablets */
+@media only screen and (min-width: 768px) {
+  .topnav {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 20px;
+  }
+
+  .logo img {
+    max-width: 70%;
+    margin: auto;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+}
+/* L  laptops */
+@media only screen and (min-width: 992px) {
+  .topnav {
+    position: relative;
+    background-color: none;
+    overflow: hidden;
+    text-align: right;
+    width: 100%;
+    float: right;
+    top: 30px;
+  }
+  .logo img {
+    width: 280px;
+    top: 20px;
+    left: 10px;
+    position: absolute;
+    display: block;
+    z-index: 5;
+  }
+}
+/* XL large laptops/desktops */
+@media only screen and (min-width: 1200px) {
+  .topnav {
+    position: relative;
+    background-color: none;
+    overflow: hidden;
+    text-align: right;
+    width: 100%;
+    float: right;
+    top: 30px;
+  }
+  .logo img {
+    width: 280px;
+    top: 20px;
+    left: 10px;
+    position: absolute;
+    display: block;
+    z-index: 5;
+  }
+}
 
 a {
   color: whitesmoke;
 }
 
 a:hover {
-  color: rgb(169, 231, 119);
+  color: #a9e777;
 }
 
 .gallery {
@@ -159,7 +238,8 @@ a:hover {
   font-size: 16px;
 }
 
-@media screen and (max-width: 600px) {
+/* XS portrait tablets/large phones */
+@media only screen and (max-width: 600px) {
   .column {
     width: 100%;
     padding: 0;
@@ -203,6 +283,187 @@ a:hover {
     margin: auto;
   }
 }
+/* S portrait tablets/large phones */
+@media only screen and (min-width: 600px) {
+  .column {
+    width: 100%;
+    padding: 0;
+  }
+
+  .half-column {
+    width: 100%;
+    padding: 0;
+  }
+
+  .text-column {
+    width: 85%;
+    margin: auto;
+    display: block;
+    top: -100px;
+    padding: 0;
+    float: none;
+    left: 0;
+    position: relative;
+  }
+
+  .wide-column {
+    width: 85%;
+    margin: auto;
+    float: none;
+    position: relative;
+    top: -60px;
+  }
+
+  .wide-column img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    margin-bottom: 3%;
+  }
+
+  .gallery {
+    position: relative;
+    width: 85%;
+    margin: auto;
+  }
+}
+/* M tablets */
+@media only screen and (min-width: 768px) {
+  .column {
+    width: 30.33%;
+    float: left;
+    padding: 1.5%;
+    display: block;
+  }
+
+  .column img {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+
+  .half-column {
+    width: 47%;
+    float: left;
+    padding: 1.5%;
+    display: block;
+  }
+
+  .half-column img {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+
+  .wide-column {
+    width: 55%;
+    float: right;
+    margin-right: 35px;
+    display: block;
+  }
+
+  .wide-column img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .gallery {
+    position: relative;
+    margin: auto;
+    width: 98%;
+    top: 75px;
+  }
+}
+/* L  laptops */
+@media only screen and (min-width: 992px) {
+  .column {
+    width: 30.33%;
+    float: left;
+    padding: 1.5%;
+    display: block;
+  }
+
+  .column img {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+
+  .half-column {
+    width: 47%;
+    float: left;
+    padding: 1.5%;
+    display: block;
+  }
+
+  .half-column img {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+
+  .wide-column {
+    width: 55%;
+    float: right;
+    margin-right: 35px;
+    display: block;
+  }
+
+  .wide-column img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .gallery {
+    position: relative;
+    margin: auto;
+    width: 98%;
+    top: 75px;
+  }
+}
+/* XL large laptops/desktops */
+@media only screen and (min-width: 1200px) {
+  .column {
+    width: 30.33%;
+    float: left;
+    padding: 1.5%;
+    display: block;
+  }
+
+  .column img {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+
+  .half-column {
+    width: 47%;
+    float: left;
+    padding: 1.5%;
+    display: block;
+  }
+
+  .half-column img {
+    width: 100%;
+    margin-bottom: 7%;
+  }
+
+  .wide-column {
+    width: 55%;
+    float: right;
+    margin-right: 35px;
+    display: block;
+  }
+
+  .wide-column img {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .gallery {
+    position: relative;
+    margin: auto;
+    width: 98%;
+    top: 75px;
+  }
+}
+
 .full {
   text-align: center;
   margin: auto;
