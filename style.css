@@ -121,7 +121,7 @@ a {
   .logo img {
     max-width: 70%;
     margin: auto;
-    position: absolute;
+    position: relative;
     display: block;
     top: 0;
     left: 0;
