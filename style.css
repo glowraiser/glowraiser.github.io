@@ -5,11 +5,6 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  cursor: url("/assets/starcursor.png"), auto !important;
-}
-
-a {
-  cursor: url("/assets/starcursor1.png"), auto !important;
 }
 
 @font-face {
