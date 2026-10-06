@@ -5,40 +5,24 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="Graphic design & illustration portfolio ★‧₊˚☆彡" />
-    <meta
-      name="keywords"
-      content="HTML, CSS, JavaScript" />
-    <meta
-      name="author"
-      content="Lily Chan" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/assets/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="style.css" />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
+      content="Graphic design & illustration portfolio ★‧₊˚☆彡"
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Lily Chan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Instrument+Serif:ital@0;1&display=swap"
-      rel="stylesheet" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <style>
       .project {
         margin-top: 0px;
@@ -66,38 +50,31 @@
         font-size: 16px;
         float: right;
       }
+
+      @keyframes marquee {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-50%);
+        }
+      }
     </style>
-    <script
-      src="/cursor.js"
-      defer></script>
+    <script src="/cursor.js" defer></script>
   </head>
   <body>
     <div class="background">
-      <video
-        autoplay
-        muted
-        loop
-        playsinline
-        webkit-playsinline
-        id="bgwaves">
-        <source
-          src="/assets/bg/waves.mp4"
-          type="video/mp4" />
+      <video autoplay muted loop playsinline webkit-playsinline id="bgwaves">
+        <source src="/assets/bg/waves.mp4" type="video/mp4" />
       </video>
     </div>
     <div class="header">
       <div class="logo">
         <a href="/index.html"><img src="/assets/logo.webp" /></a>
       </div>
-      <div
-        class="topnav"
-        id="myTopnav">
+      <div class="topnav" id="myTopnav">
         <nav>
-          <a
-            href="design.html"
-            class="active"
-            >Design</a
-          >
+          <a href="design.html" class="active">Design</a>
           <a href="illustration.html">Illustration</a>
           <a href="paintings.html">Paintings</a>
           <a href="photo.html">Photo</a>
@@ -105,6 +82,29 @@
         </nav>
       </div>
     </div>
+
+    <div class="marquee">
+      <div class="track">
+        <div class="content">
+          <img src="/assets/design/posters/daine.webp" />
+          <img src="/assets/design/posters/goodmusic_scan1.webp" />
+          <img src="/assets/design/posters/goodmusic_scan2.webp" />
+          <img src="/assets/design/posters/powerlines.webp" />
+          <img src="/assets/design/posters/lightleak1.webp" />
+          <img src="/assets/design/posters/clementine.webp" />
+          <img src="/assets/design/posters/americancandy.webp" />
+
+          <img src="/assets/design/posters/daine.webp" />
+          <img src="/assets/design/posters/goodmusic_scan1.webp" />
+          <img src="/assets/design/posters/goodmusic_scan2.webp" />
+          <img src="/assets/design/posters/powerlines.webp" />
+          <img src="/assets/design/posters/lightleak1.webp" />
+          <img src="/assets/design/posters/clementine.webp" />
+          <img src="/assets/design/posters/americancandy.webp" />
+        </div>
+      </div>
+    </div>
+
     <div class="gallery">
       <div class="half-column">
         <img src="/assets/design/tender.gif" />
@@ -117,11 +117,7 @@
           </span>
           <br /><br />
           <span id="content">Book Design, Typography</span>
-          <a
-            id="full"
-            href="/design/tender.html"
-            >FULL PROJECT →</a
-          >
+          <a id="full" href="/design/tender.html">FULL PROJECT →</a>
         </div>
         <img src="assets/design/sunmilk.webp" />
         <div class="project">
@@ -132,11 +128,7 @@
           </span>
           <br /><br />
           <span id="content">Branding, Packaging design</span>
-          <a
-            id="full"
-            href="/design/sunmilk.html"
-            >FULL PROJECT →</a
-          >
+          <a id="full" href="/design/sunmilk.html">FULL PROJECT →</a>
         </div>
         <img src="assets/design/glam/glam.gif" />
         <div class="project">
@@ -147,15 +139,11 @@
           </span>
           <br /><br />
           <span id="content">Typography, Collage</span>
-          <a
-            id="full"
-            href="/design/glam.html"
-            >FULL PROJECT →</a
-          >
+          <a id="full" href="/design/glam.html">FULL PROJECT →</a>
         </div>
       </div>
       <div class="half-column">
-        <img src="/assets/design/goodtimes.webp" />
+        <img src="/assets/design/goodtimes/goodtimes.webp" />
         <div class="project">
           <span id="title">Good Times</span><br />
           <span id="desc"
@@ -165,11 +153,7 @@
           </span>
           <br /><br />
           <span id="content">Branding</span>
-          <a
-            id="full"
-            href="/design/goodtimes.html"
-            >FULL PROJECT →</a
-          >
+          <a id="full" href="/design/goodtimes.html">FULL PROJECT →</a>
         </div>
         <img src="assets/design/sabon.webp" />
         <div class="project">
@@ -180,11 +164,7 @@
           </span>
           <br /><br />
           <span id="content">Typography</span>
-          <a
-            id="full"
-            href="/design/sabon.html"
-            >FULL PROJECT →</a
-          >
+          <a id="full" href="/design/sabon.html">FULL PROJECT →</a>
         </div>
         <img src="assets/design/nuttshell.webp" />
         <div class="project">
@@ -195,11 +175,7 @@
           </span>
           <br /><br />
           <span id="content">Illustration. Publication Design</span>
-          <a
-            id="full"
-            href="/design/nuttshell.html"
-            >FULL PROJECT →</a
-          >
+          <a id="full" href="/design/nuttshell.html">FULL PROJECT →</a>
         </div>
       </div>
     </div>

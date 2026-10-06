@@ -169,6 +169,27 @@ a:hover {
     width: 85%;
     top: 60px;
   }
+  .marquee {
+    position: relative;
+    top: 55px;
+    padding-bottom: 50px;
+    width: 100vw;
+    max-width: 100%;
+    height: 275px;
+    overflow-x: hidden;
+  }
+
+  .marquee img {
+    height: 275px;
+    padding-left: 20px;
+  }
+
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+  }
 }
 /* S portrait tablets/large phones */
 @media only screen and (min-width: 600px) {
@@ -228,6 +249,27 @@ a:hover {
   .gallery {
     width: 85%;
     top: 60px;
+  }
+  .marquee {
+    position: relative;
+    top: 60px;
+    padding-bottom: 50px;
+    width: 100vw;
+    max-width: 100%;
+    height: 300px;
+    overflow-x: hidden;
+  }
+
+  .marquee img {
+    height: 300px;
+    padding-left: 20px;
+  }
+
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
   }
 }
 
@@ -295,6 +337,27 @@ a:hover {
     width: 95%;
     top: 60px;
   }
+  .marquee {
+    position: relative;
+    top: 70px;
+    padding-bottom: 50px;
+    width: 100vw;
+    max-width: 100%;
+    height: 300px;
+    overflow-x: hidden;
+  }
+
+  .marquee img {
+    height: 300px;
+    padding-left: 20px;
+  }
+
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+  }
 }
 /* L  laptops */
 @media only screen and (min-width: 992px) {
@@ -360,6 +423,27 @@ a:hover {
     width: 95%;
     top: 75px;
   }
+  .marquee {
+    position: relative;
+    top: 90px;
+    padding-bottom: 50px;
+    width: 100vw;
+    max-width: 100%;
+    height: 300px;
+    overflow-x: hidden;
+  }
+
+  .marquee img {
+    height: 300px;
+    padding-left: 20px;
+  }
+
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+  }
 }
 /* XL large laptops/desktops */
 @media only screen and (min-width: 1200px) {
@@ -423,5 +507,26 @@ a:hover {
   .gallery {
     width: 95%;
     top: 75px;
+  }
+  .marquee {
+    position: relative;
+    top: 90px;
+    padding-bottom: 50px;
+    width: 100vw;
+    max-width: 100%;
+    height: 300px;
+    overflow-x: hidden;
+  }
+
+  .marquee img {
+    height: 300px;
+    padding-left: 20px;
+  }
+
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 15s linear infinite;
   }
 }
